@@ -75,8 +75,8 @@
 	.box-btn{
 		width: 250px;
 		height: 250px;
-		box-shadow: 15px 20px 10px lightgreen;
-		background-color: lightgoldenrodyellow;
+		box-shadow: 15px 20px 10px yellow;
+		background-color:#c4efff;
 		font-size: 10rem;
 		color: blue;
 		border-radius: 35px;
