@@ -5,14 +5,15 @@
 	text-align: center;
 }
 #titlename{
-	padding: 3.5%;
-	font-size: 3rem;
+	padding: 0%;
+	font-size: 5rem;
 	font-family: monospace;
 	letter-spacing:4px;
 }
 #reload{
 	text-align: center;
 	margin:10%;
+	margin-top: 5%;
 }
 
 
@@ -27,15 +28,17 @@
 	
 }
 .box-btn{
+	background-color:#c4efff;
 	border-style: solid;
-	height: 130px;
-	width: 130px;
+	height: 170px;
+	width: 170px;
 	border-style: solid;
 	border-color: black;
 	border: 10px;
 	border-radius: 30px;
-	box-shadow: 20px 15px 10px orange;
-	font-size: 5rem;
+	box-shadow: 15px 10px 10px yellow;
+	font-size: 7rem;
+	color: blue;
 
 }
 .status{
@@ -56,9 +59,9 @@
 .btn-reload{
 	color: black;
 	border-style: none;
-	height: 90px;
-	width: 180px;
-	font-size: 2.5rem;
+	height: 120px;
+	width: 240px;
+	font-size: 3rem;
 	font-family: monospace;
 	border-radius: 30px;
 	box-shadow: 0px 0px 3px 2px green; 
@@ -66,4 +69,28 @@
 
 .flash{
 	background-color: lightgreen;
+}
+
+@media(max-width: 1000px){
+	.box-btn{
+		width: 250px;
+		height: 250px;
+		box-shadow: 15px 20px 10px lightgreen;
+		background-color: lightgoldenrodyellow;
+		font-size: 10rem;
+		color: blue;
+		border-radius: 35px;
+	}
+	.flash{
+		background-color: lightgreen;
+	}
+	#titlename{
+		font-size: 7rem;
+	}
+	.btn-reload{
+		height: 180px;
+		width: 360px;
+		font-size: 5rem;
+		margin-top: 10%;
+	}
 }
