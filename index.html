@@ -81,5 +81,18 @@
 
 
 	<script type="text/javascript" src="index.js"></script>
+	<script type="application/javascript" 
+                                 src="https://sdki.truepush.com/sdk/v2.0.4/app.js" async></script>
+                                <script>
+                                var truepush = window.truepush || [];
+                                truepush.push(function(){
+                                    truepush.Init({
+                                        
+                                        id: "652a58f9712e0e81f92043bb"
+                                    }, function(error){
+                                            if(error) console.error(error);
+                                    })
+                                })
+                                </script>
 </body>
 </html>
