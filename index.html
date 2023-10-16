@@ -90,6 +90,28 @@
 
 
 	<script type="text/javascript" src="index.js"></script>
-	
+	<script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-messaging-compat.js"></script>
+	<script>
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyD9SnlJl8gne24LSxAwiP0qhW1OOQMG6Ag",
+		  authDomain: "push-notify-d357b.firebaseapp.com",
+		  projectId: "push-notify-d357b",
+		  storageBucket: "push-notify-d357b.appspot.com",
+		  messagingSenderId: "137829051819",
+		  appId: "1:137829051819:web:183c33520b3e9faa6d76ee",
+		  measurementId: "G-RKLEBNJB3B"
+		};
+		const app=firebase.initializeApp(firebaseConfig)
+		const messaging=firebase.messaging()
+		messaging.getToken({
+		vapidKey:"BMmGrM3w0gOOH_eSLga3j48sXPO9JmLe-J8z1Gg0ffw25AZHe1UDncx_19IzKRyPH_yquKwaWgU2u4mPXBhNetk"
+		})
+		messaging.onMessage((payload)=>{
+			console.log(payload);
+		
+		})
+	</script>
 </body>
 </html>
